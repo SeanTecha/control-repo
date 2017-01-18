@@ -7,6 +7,7 @@ forge "http://forge.puppetlabs.com"
 #mod "puppetlabs/concat",      '2.1.0'
 
 mod 'chocolatey-chocolatey', '1.2.6'
+mod 'puppet-dotnet', '1.0.2'
 
 # Modules from Git
 # Examples: https://github.com/puppetlabs/r10k/blob/master/doc/puppetfile.mkd#examples
