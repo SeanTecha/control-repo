@@ -1,10 +1,9 @@
 class profile::windows::baseline {
-
   Package {
     ensure   => installed,
   }
-  
-  include chocolate,
+
+  include chocolatey
 
   package { 'unzip': }
   package { 'git': }
