@@ -1,6 +1,6 @@
 class profile::windows::baseline {
 
-  include dotnet
+  dotnet { 'dotnet35': version => '3.5' }
   include chocolatey
 
   Package {
