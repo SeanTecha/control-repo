@@ -1,12 +1,7 @@
 class profile::windows::features {
+  $iis_features = ['Web-Server','Web-WebServer','Web-Asp-Net45','Web-ISAPI-Ext','Web-ISAPI-Filter','NET-Framework-45-ASPNET','WAS-NET-Environment','Web-Http-Redirect','Web-Filtering','Web-Mgmt-Console','Web-Mgmt-Tools']
 
-  Windowsfeature { 'IIS_NET45':
-    feature_name => [ 'Web-WebServer',
-      'Web-Http-Errors',
-      'Web-Http-Logging',
-      'Web-Asp-Net45',
-      'NET-Framework-45-ASPNET',
-    ],
-    installmanagementtools => true,
+  windowsfeature { $iis_features:
+    ensure => present,
   }
 }
