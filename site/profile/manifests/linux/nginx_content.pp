@@ -10,9 +10,4 @@ class profile::linux::nginx_content {
     mode    => '0644',
     notify  => Service['nginx'],
   }
-
-  service { 'nginx':
-    ensure => running,
-    enable => true,
-  }
 }
