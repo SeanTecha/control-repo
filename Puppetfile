@@ -13,6 +13,7 @@ mod 'chocolatey-chocolatey', '1.2.6'
 mod 'puppet-nginx', '0.6.0'
 mod 'puppetlabs-apt', '2.3.0'
 mod 'puppetlabs-concat', '2.2.0'
+mod 'puppet-iis', '2.0.2'
 
 # Modules from Git
 # Examples: https://github.com/puppetlabs/r10k/blob/master/doc/puppetfile.mkd#examples
