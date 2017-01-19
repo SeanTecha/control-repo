@@ -1,6 +1,6 @@
 class profile::linux::baseline {
   Package {
-    ensure   => installed,
+    ensure => installed,
   }
 
   package { 'unzip': }

@@ -5,11 +5,11 @@ class profile::windows::iis {
   }
 
   iis::manage_site { 'www.mysite.com':
-    site_path     => 'C:\inetpub\wwwroot\mysite',
-    site_id       => '10',
-    port          => '80',
-    ip_address    => '*',
-    host_header   => 'www.mysite.com',
-    app_pool      => 'my_application_pool'
+    site_path   => 'C:\inetpub\wwwroot\mysite',
+    site_id     => '10',
+    port        => '80',
+    ip_address  => '*',
+    host_header => 'www.mysite.com',
+    app_pool    => 'my_application_pool',
   }
 }
