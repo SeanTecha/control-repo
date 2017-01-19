@@ -1,1 +1,1 @@
-HELLO, THIS IS <%= $name -%>'s page
+Hello, this is <%= $name -%>'s page
