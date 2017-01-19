@@ -8,5 +8,11 @@ class profile::linux::nginx_content {
     ensure  => file,
     content => 'THIS IS A TEST',
     mode    => '0644',
+    notify  => Service['nginx'],
+  }
+
+  service { 'nginx':
+    ensure => running,
+    enable => true,
   }
 }
