@@ -4,7 +4,7 @@ class profile::linux::nginx {
     package_source => 'nginx-stable',
   }
 
-  nginx::resource::server{ '$::ipaddress':
+  nginx::resource::server{ $::ipaddress:
     www_root => '/opt/html/',
   }
 }
