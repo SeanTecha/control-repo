@@ -5,6 +5,6 @@ class profile::linux::nginx {
   }
 
   nginx::resource::server{ $::ipaddress:
-    www_root => '/var/www/test.com',
+    www_root => '/var/www/',
   }
 }

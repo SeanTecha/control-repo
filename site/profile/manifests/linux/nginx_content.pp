@@ -4,7 +4,7 @@ class profile::linux::nginx_content {
     mode    => '0644',
   }
 
-  file { '/var/www/test.com':
+  file { '/var/www/index.html':
     ensure  => file,
     content => 'THIS IS A TEST YO',
     mode    => '0644',
