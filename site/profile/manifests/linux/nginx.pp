@@ -2,6 +2,9 @@ class profile::linux::nginx {
   class{ 'nginx':
     manage_repo    => true,
     package_source => 'nginx-stable',
-    www_root => 'var/www/',
+  }
+
+  nginx::resource::server { '10.32.162.14':
+    www_root => '/var/www/',
   }
 }
