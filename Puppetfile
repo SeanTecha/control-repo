@@ -10,6 +10,7 @@ mod 'puppetlabs-stdlib', '4.14.0'
 mod 'puppetlabs-powershell', '2.1.0'
 mod 'badgerious-windows_env', '2.2.2'
 mod 'chocolatey-chocolatey', '1.2.6'
+mod 'puppet-nginx', '0.6.0'
 
 # Modules from Git
 # Examples: https://github.com/puppetlabs/r10k/blob/master/doc/puppetfile.mkd#examples
